@@ -1,0 +1,33 @@
+package co.gottardy.melo.gotalentdigital.hibernate.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="course")
+public class Course implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="id_course")
+	private Long id_course;
+	
+	private String name;
+	
+	
+	private String themes;
+	
+	
+	private String project;
+	
+	
+	private Teacher teacher;
+	
+	
+
+}

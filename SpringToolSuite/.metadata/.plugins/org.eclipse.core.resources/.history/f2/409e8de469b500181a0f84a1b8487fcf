@@ -1,0 +1,46 @@
+package co.gottardy.melo.gotalentdigital.hibernate.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="teacher_social_media")
+public class TeacherSocialMedia implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="id_teacher_social_media")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id_teacher_social_media;
+	
+	@Column(name="id_teacher")
+	private Long id_teacher;
+	
+	@Column(name="id_socila_media")
+	private Long id_social_media;
+	
+	@Column(name="nickname")
+	private String nickname;
+	
+	
+	public TeacherSocialMedia(Long id_teacher_social_media, Long id_teacher, Long id_social_media, String nickname) {
+		super();
+		this.id_teacher_social_media = id_teacher_social_media;
+		this.id_teacher = id_teacher;
+		this.id_social_media = id_social_media;
+		this.nickname = nickname;
+	}
+
+
+	public TeacherSocialMedia() {
+		super();
+	}
+
+}

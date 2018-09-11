@@ -1,0 +1,57 @@
+package co.gottardy.melo.gotalentdigital.hibernate.model;
+
+import java.io.Serializable;
+
+public class socialmedia implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Long id_social_media;
+	private String name;
+	private String icon;
+	
+	public socialmedia(String name, String icon) {
+		super();
+		this.name = name;
+		this.icon = icon;
+	}
+	
+	
+	public socialmedia() {
+		super();
+	}
+
+
+	public Long getId_social_media() {
+		return id_social_media;
+	}
+
+	public void setId_social_media(Long id_social_media) {
+		this.id_social_media = id_social_media;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getIcon() {
+		return icon;
+	}
+
+	public void setIcon(String icon) {
+		this.icon = icon;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+
+}

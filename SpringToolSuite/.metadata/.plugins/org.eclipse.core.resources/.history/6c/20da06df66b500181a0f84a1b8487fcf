@@ -1,0 +1,61 @@
+package co.gottardy.melo.gotalentdigital.hibernate.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class teacher implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@Column(name="id_teacher")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id_teacher;
+	
+	@Column(name="name")
+	private String name;
+	
+	@Column(name="avatar")
+	private String avatar;
+
+	public teacher(String name, String avatar) {
+		super();
+		this.name = name;
+		this.avatar = avatar;
+	}
+
+	public teacher() {
+		super();
+	}
+
+	public Long getId_teacher() {
+		return id_teacher;
+	}
+
+	public void setId_teacher(Long id_teacher) {
+		this.id_teacher = id_teacher;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
+	}
+	
+	
+
+}

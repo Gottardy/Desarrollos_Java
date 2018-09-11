@@ -1,0 +1,7 @@
+1536631794139	Rename type 'teacher'
+1536631810496	Rename type 'socialmedia'
+1536631831522	Rename type 'course'
+1536632570554	Rename type 'Teacher_Social_Media'
+1536633115628	Encapsulate field 'courses'
+1536633194228	Encapsulate field 'teacherSocialMedia'
+1536633257500	Encapsulate field 'teacherSocialMedia'

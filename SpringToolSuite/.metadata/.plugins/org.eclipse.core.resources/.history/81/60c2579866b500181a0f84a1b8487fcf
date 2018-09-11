@@ -1,0 +1,7 @@
+package co.gottardy.melo.gotalentdigital.hibernate.model;
+
+import java.io.Serializable;
+
+public class teacher implements Serializable{
+
+}
