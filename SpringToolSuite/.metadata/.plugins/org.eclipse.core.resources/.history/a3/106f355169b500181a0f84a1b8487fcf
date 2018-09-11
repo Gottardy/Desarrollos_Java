@@ -1,9 +1,0 @@
-package co.gottardy.melo.gotalentdigital.hibernate.model;
-
-public class Teacher_Social_Media {
-
-	public Teacher_Social_Media() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
