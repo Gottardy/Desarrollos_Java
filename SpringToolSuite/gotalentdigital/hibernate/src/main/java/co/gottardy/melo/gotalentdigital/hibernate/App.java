@@ -13,11 +13,11 @@ public class App
     {
         System.out.println( "Hello World!" );
         
-        Session session = iniciarSessionFactory();
-        /*
+         Session session = obtenerSessionFactory();
+        
         Teacher teacher = new Teacher("Anahi Salgado","Avatar");
-        realizarTransaccion(session, teacher);
-        */
+        //realizarTransaccion(session, teacher);
+        
         Course course = new Course("Java Avanzado", "Hibernate", "Rest API");
         realizarTransaccion(session,course);
         
@@ -31,7 +31,7 @@ public class App
         session.close();
 	}
 
-	public static Session iniciarSessionFactory() {
+	public static Session obtenerSessionFactory() {
 		SessionFactory sessionFactory;
         Configuration configuration = new Configuration();
         configuration.configure();
