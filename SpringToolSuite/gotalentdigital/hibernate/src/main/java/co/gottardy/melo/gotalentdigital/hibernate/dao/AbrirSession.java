@@ -6,12 +6,18 @@ import org.hibernate.cfg.Configuration;
 
 public class AbrirSession {
 	
-	public Session obtenerSessionFactory() {
-		SessionFactory sessionFactory;
+	private Session session;
+	
+	public AbrirSession() {
+		
         Configuration configuration = new Configuration();
         configuration.configure();
-        sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession();
+        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        session = sessionFactory.openSession();
+        session.beginTransaction();
+	}
+
+	public Session obtenerSessionFactory() {
 		return session;
 	}
 
